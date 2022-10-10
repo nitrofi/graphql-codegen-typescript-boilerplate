@@ -1,0 +1,27 @@
+{
+  "name": "graphql-codegen-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal GraphQL tooling boilerplate with GraghQL Code Generator for Typescript that is easy to adapt and expand for any workflow.",
+  "scripts": {
+    "tsc:watch": "rm -rf lib && tsc -w",
+    "codegen": "DOTENV_CONFIG_PATH=.env graphql-codegen --require dotenv/config --config ./codegen.yml",
+    "codegen:watch": "npm run codegen -- --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@graphql-codegen/add": "^3.2.1",
+    "@graphql-codegen/cli": "^2.13.5",
+    "@graphql-codegen/gql-tag-operations-preset": "^1.6.0",
+    "@graphql-codegen/typed-document-node": "^2.3.3",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-document-nodes": "^2.3.3",
+    "@graphql-codegen/typescript-operations": "^2.5.3",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": "16",
+    "npm": "8"
+  }
+}

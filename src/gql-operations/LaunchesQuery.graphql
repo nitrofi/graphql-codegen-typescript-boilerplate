@@ -1,0 +1,10 @@
+query Launches($limit: Int!) {
+  launches(limit: $limit) {
+    mission_name
+    rocket {
+      rocket {
+        ...RocketFragment
+      }
+    }
+  }
+}

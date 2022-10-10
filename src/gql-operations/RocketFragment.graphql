@@ -1,0 +1,9 @@
+fragment RocketFragment on Rocket {
+  name
+  mass {
+    kg
+  }
+  payload_weights {
+    kg
+  }
+}
